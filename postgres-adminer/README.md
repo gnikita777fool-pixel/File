@@ -1,4 +1,3 @@
----
 # 1. PostgreSQL + Adminer
 
 ## Структура проекта
@@ -103,6 +102,4 @@ http://localhost:8080
 | Database | appdb      |
 
 <img width="2553" height="1282" alt="5" src="https://github.com/user-attachments/assets/e0ccf345-e9d4-45aa-bc68-08b5abff6a98" />
-
----
 
