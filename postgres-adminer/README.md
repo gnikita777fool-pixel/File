@@ -1,5 +1,4 @@
 ---
-
 # 1. PostgreSQL + Adminer
 
 ## Структура проекта
