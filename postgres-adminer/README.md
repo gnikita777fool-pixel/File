@@ -1,13 +1,3 @@
-# Docker-проекты: PostgreSQL + Adminer, pgAdmin и CloudBeaver
-
-В рамках задания необходимо самостоятельно создать три проекта с использованием `Dockerfile`:
-
-1. PostgreSQL + Adminer
-2. PostgreSQL + pgAdmin
-3. PostgreSQL + CloudBeaver
-
-Каждый проект располагается в отдельной директории и может запускаться независимо от остальных.
-
 ---
 
 # 1. PostgreSQL + Adminer
@@ -32,6 +22,8 @@ ENV POSTGRES_PASSWORD=admin123
 
 COPY init.sql /docker-entrypoint-initdb.d/
 ```
+
+<img width="1875" height="184" alt="1" src="https://github.com/user-attachments/assets/8e28d4a7-e214-4aa9-8832-fce267241fcc" />
 
 ## docker-compose.yml
 
@@ -60,6 +52,7 @@ services:
 volumes:
   postgres_data:
 ```
+<img width="1876" height="456" alt="2" src="https://github.com/user-attachments/assets/19d8428e-8710-4160-89f2-2f840ba2cc75" />
 
 ## init.sql
 
@@ -75,6 +68,7 @@ VALUES
     ('Ivan', 'ivan@example.com'),
     ('Anna', 'anna@example.com');
 ```
+<img width="1889" height="201" alt="4" src="https://github.com/user-attachments/assets/d3407a8d-2c6c-4373-b63d-248336f686c8" />
 
 ## Запуск
 
@@ -89,6 +83,7 @@ cd postgres-adminer
 ```bash
 docker compose up --build
 ```
+<img width="1757" height="412" alt="3" src="https://github.com/user-attachments/assets/a2bee86d-fbb6-4238-9787-921f2250dee2" />
 
 После запуска Adminer будет доступен по адресу:
 
@@ -107,6 +102,8 @@ http://localhost:8080
 | Username | admin      |
 | Password | admin123   |
 | Database | appdb      |
+
+<img width="2553" height="1282" alt="5" src="https://github.com/user-attachments/assets/e0ccf345-e9d4-45aa-bc68-08b5abff6a98" />
 
 ---
 
